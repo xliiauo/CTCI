@@ -13,12 +13,14 @@ class MergeSortedArray {
         if (nums1[a] > nums2[b]) {
           nums1[i] = nums1[a];
           if (--a < 0) {
-            System.arraycopy(nums2, 0, nums1, 0, b+1);
+            System.arraycopy(nums2, 0, nums1, 0, b + 1);
             break;
           }
         } else {
           nums1[i] = nums2[b];
-          if (--b < 0) break;
+          if (--b < 0) {
+            break;
+          }
         }
       }
     }
@@ -30,7 +32,7 @@ class MergeSortedArray {
     int b = n - 1;
     int c = m + n - 1;
     while (c >= 0) {
-      if (a >=0 && b >= 0) {
+      if (a >= 0 && b >= 0) {
         if (nums1[a] > nums2[b]) {
           nums1[c] = nums1[a];
           a--;
