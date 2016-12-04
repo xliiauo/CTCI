@@ -9,8 +9,8 @@ class IsUnique {
     System.out.println(new IsUnique().isUniqueHashSet("abc"));
     System.out.println(new IsUnique().isUniqueHash("asdfasdfasd"));
     System.out.println(new IsUnique().isUniqueHash("abc"));
-    System.out.println(new IsUnique().isUniqueBitVector("asdfasdfasd"));
-    System.out.println(new IsUnique().isUniqueBitVector("abc"));
+    System.out.println(new IsUnique().isUnique("asdfasdfasd"));
+    System.out.println(new IsUnique().isUnique("abc"));
   }
 
   // Use the methods in HashSet
